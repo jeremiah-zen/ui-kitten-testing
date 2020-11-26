@@ -2,12 +2,13 @@ import {StyleSheet} from 'react-native';
 
 const loginStyle = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'center'
   },
   input: {
-      marginVertical: '5%'
+    marginVertical: '10%'
+  },
+  button: {
+    marginTop: '10%'
   }
 });
 

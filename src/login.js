@@ -7,7 +7,7 @@ const login = ({navigation}) => {
   const [pass, setPass] = React.useState('');
 
   return (
-    <>
+    <Layout style={styles.container} level="2">
       <Input
         style={styles.input}
         placeholder="username"
@@ -23,8 +23,13 @@ const login = ({navigation}) => {
         secureTextEntry={true}
         onChangeText={(nextValue) => setPass(nextValue)}
       />
-      <Button onPress={() => navigation.navigate('Dashboard')}>Sign In</Button>
-    </>
+      <Button
+        style={styles.button}
+        onPress={() => navigation.navigate('Dashboard')}
+      >
+        {'Sign In'}
+      </Button>
+    </Layout>
   );
 };
 
